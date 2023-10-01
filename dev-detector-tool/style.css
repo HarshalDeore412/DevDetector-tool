@@ -1,0 +1,214 @@
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--lm-bg);
+    font-style: "Space Mono", monospace;
+    position: relative;
+    color: var(--lm-text);
+}
+.userDetails{
+    min-width: 327px;
+    max-width: 600px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.header{
+    padding-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.headerName{
+    font-size: 30px;
+    font: bolder;
+}
+
+.theme{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.themeBtn{
+    text-decoration: none;
+}
+
+.error{
+    display: none;
+    width: 100%;
+    text-align: right;
+    color: red;
+    padding: 1rem 2rem;
+}
+.error.active{
+    display: flex;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+.searchBar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: var(--lm-shadow);
+    border: none;
+    border-radius: 10px;
+}
+
+.searchBar input{
+    width: 100%;
+    padding: 0 1rem;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+.searchBar button{
+    padding: 8px 16px;
+    background-color: var(--btn);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font: bold;
+    font-weight: 700;
+}
+.searchBar button:hover{
+    background-color: var(--btn-hover);  
+}
+
+.userInfo{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 24px;
+    display: none;
+}
+
+.userInfo.active{
+    display: block;
+}
+.firstView{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.active{
+    display: flex;
+}
+
+.userName{
+    font: bold;
+    font-size: 30px;
+}
+
+.firstView .active{
+    display: flex;
+}
+
+.userImage{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+
+}
+
+.bio{
+    padding: 1rem;
+    text-align: center;
+}
+
+.userStatContainer{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.userStats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--lm-bg);
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.repos{
+    display: flex;
+    flex-direction: column;
+}
+.followers{
+    display: flex;
+    flex-direction: column;
+}
+.following{
+    display: flex;
+    flex-direction: column;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.links div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.link{
+    width: 50%;
+    padding: 1rem;
+}
